@@ -15,3 +15,11 @@ header h3 {
 .row {
     background-color: darkgray;
 }
+
+.paragraph {
+    float: right;
+}
+
+.row img {
+    float: left;
+}
