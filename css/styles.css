@@ -11,3 +11,7 @@ header {
 header h3 {
     font-size: 3rem;
 }
+
+.row {
+    background-color: darkgray;
+}
