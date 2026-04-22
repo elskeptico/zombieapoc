@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Falls Cipher';
-  src: url('/fonts/FallsCipher-Regular.woff2') format('woff2'),
-       url('/fonts/FallsCipher-Regular.otf') format('opentype'),
-       url('/fonts/FallsCipher-Regular.ttf') format('truetype');
+  src: url('FallsCipher-Regular.woff2') format('woff2'),
+       url('FallsCipher-Regular.otf') format('opentype'),
+       url('FallsCipher-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
