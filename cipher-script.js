@@ -11,25 +11,31 @@ const alphabet = [
 ];
 
 let text = 'theworldisawheelandweareallpegs';
-let newText;
+let newText = '';
+const shift = 3;
 
 const cipher = Math.floor(Math.random() * 3);
 
-if (cipher = 0) {
-
-    function encrypt(char) {
-        const shift = Number(form.shift.value);
+for (let i = 0; i < text.length; i++) {
+        let char = text[i]; // Accessing the letter directly
         if (alphabet.includes(char.toUpperCase())) { 
-        const position = alphabet.indexOf(char.toUpperCase());
-        const newPosition = (position + shift)%26;
-        return alphabet[newPosition] 
+            const position = alphabet.indexOf(char.toUpperCase());
+            const newPosition = (position + shift)%26;
+            newText += alphabet[newPosition]
         }
-    else { return char }
     }
+    alert(newText);
 
-
-
-    text = text.map(char => encrypt(char)).join('');
+if (cipher = 0) {
+    for (let i = 0; i < text.length; i++) {
+        let char = text[i]; // Accessing the letter directly
+        if (alphabet.includes(char.toUpperCase())) { 
+            const position = alphabet.indexOf(char.toUpperCase());
+            const newPosition = (position + shift)%26;
+            newText += alphabet[newPosition]
+        }
+    }
+    alert(newText);
 }
 
 if (cipher = 1) {
