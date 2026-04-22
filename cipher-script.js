@@ -1,5 +1,5 @@
 const ciphers = [
-    'ceaser', 'atbash', 'baconian'
+    'caesar', 'atbash', 'baconian'
 ];
 
 const alphabet = [
@@ -10,47 +10,43 @@ const alphabet = [
   'Y','Z'
 ];
 
-let text = 'THEWORLDISAWHEELANDWEAREALLPEGS';
-let newText = 'ya';
+let org_text = 'THEWORLDISAWHEELANDWEAREALLPEGS';
 const shift = 3;
 
-const cipher = Math.floor(Math.random() * 3);
+const cipher = Math.floor(Math.random() * 2);
 
-let alphabet2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
-    
-for (i = 0; i < text.length; i++) {
-    let coded_letter = text.charAt(i);
-    let letter_index = alphabet2.indexOf(coded_letter);
-    let decoded_letter = tebahpla.charAt(letter_index);
-    newText += decoded_letter;
-}
-alert(newText);
-
-if (cipher = 0) {
+function caesar(text) {
+    let NewText = '';
     for (let i = 0; i < text.length; i++) {
-        let char = text[i]; // Accessing the letter directly
+        let char = text[i];
         if (alphabet.includes(char.toUpperCase())) { 
             const position = alphabet.indexOf(char.toUpperCase());
             const newPosition = (position + shift)%26;
             newText += alphabet[newPosition]
         }   
     }
-    alert(newText);
+    return NewText;
 }
 
-if (cipher = 1) {
+function atbash(text) {
     let alphabet2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
-
-    for (i = 0; i < message.length; i++) {
-        var coded_letter = message.charAt(i);
-        var letter_index = alphabet2.indexOf(coded_letter);
-        var decoded_letter = tebahpla.charAt(letter_index);
-        newText = newText + decoded_letter;
+    let NewText = '';
+    for (i = 0; i < text.length; i++) {
+        let coded_letter = text.charAt(i);
+        let letter_index = alphabet2.indexOf(coded_letter);
+        let decoded_letter = tebahpla.charAt(letter_index);
+        newText += decoded_letter;
     }
+    return NewText;
 }
 
-if (cipher = 2) {
-
+if (cipher = 0) {
+    caesar(atbash(org_text));
+    document.getElementById("cipher1").innerHTML = "Caesar";
+    document.getElementById("cipher2").innerHTML = "Atbash";
+} else {
+    atbash(caesar(org_text));
+    document.getElementById("cipher1").innerHTML = "Atbash";
+    document.getElementById("cipher2").innerHTML = "Caesar";
 }
