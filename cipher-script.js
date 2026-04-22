@@ -19,8 +19,8 @@ const cipher = Math.floor(Math.random() * 3);
 let alphabet2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
     
-    for (i = 0; i < message.length; i++) {
-        var coded_letter = message.charAt(i);
+    for (i = 0; i < text.length; i++) {
+        var coded_letter = text.charAt(i);
         var letter_index = alphabet2.indexOf(coded_letter);
         var decoded_letter = tebahpla.charAt(letter_index);
         newText = newText + decoded_letter;
