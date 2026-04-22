@@ -10,7 +10,7 @@ const alphabet = [
   'Y','Z'
 ];
 
-let text = 'theworldisawheelandweareallpegs';
+let text = 'THEWORLDISAWHEELANDWEAREALLPEGS';
 let newText = 'ya';
 const shift = 3;
 
