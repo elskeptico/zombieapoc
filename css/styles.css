@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Falls Cipher';
+  src: url('../fonts/FallsCipher-Regular.woff2') format('woff2'),
+       url('../fonts/FallsCipher-Regular.otf') format('opentype'),
+       url('../fonts/FallsCipher-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Example usage 
+.falls-cipher {
+  font-family: 'Falls Cipher', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+} 
+*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
