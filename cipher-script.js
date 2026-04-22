@@ -1,5 +1,5 @@
 const ciphers = [
-    'caesar', 'atbash', 'baconian'
+    'caesar', 'atbash'
 ];
 
 const alphabet = [
@@ -13,7 +13,7 @@ const alphabet = [
 let org_text = 'THEWORLDISAWHEELANDWEAREALLPEGS';
 const shift = 3;
 
-const cipher = Math.floor(Math.random() * 2);
+const cipher = Math.random(ciphers);
 
 function caesar(text) {
     let NewText = '';
@@ -41,7 +41,7 @@ function atbash(text) {
     return NewText;
 }
 
-if (cipher = 0) {
+if (cipher = 'caesar') {
     document.getElementById("cipher1").innerHTML = "caesar";
     document.getElementById("cipher2").innerHTML = "atbash";
     document.getElementById("text").innerHTML = caesar(atbash(org_text));
