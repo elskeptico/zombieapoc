@@ -20,9 +20,9 @@ let alphabet2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
     
 for (i = 0; i < text.length; i++) {
-    var coded_letter = text.charAt(i);
-    var letter_index = alphabet2.indexOf(coded_letter);
-    var decoded_letter = tebahpla.charAt(letter_index);
+    let coded_letter = text.charAt(i);
+    let letter_index = alphabet2.indexOf(coded_letter);
+    let decoded_letter = tebahpla.charAt(letter_index);
     newText = newText + decoded_letter;
 }
 alert(newText);
