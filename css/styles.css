@@ -48,7 +48,6 @@ header h3 {
 .obfuscated {
     font-family: 'Falls Cipher', sans-serif;
     text-align: center;
-    -webkit-user-select: none;
     user-select: none; 
 }
 
