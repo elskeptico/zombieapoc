@@ -24,6 +24,7 @@ for (i = 0; i < text.length; i++) {
     let letter_index = alphabet2.indexOf(coded_letter);
     let decoded_letter = tebahpla.charAt(letter_index);
     newText = newText + decoded_letter;
+    alert("the first stage")
 }
 alert(newText);
 
