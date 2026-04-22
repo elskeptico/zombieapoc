@@ -42,11 +42,11 @@ function atbash(text) {
 }
 
 if (cipher = 0) {
-    caesar(atbash(org_text));
-    document.getElementById("cipher1").innerHTML = "Caesar";
-    document.getElementById("cipher2").innerHTML = "Atbash";
+    document.getElementById("cipher1").innerHTML = "caesar";
+    document.getElementById("cipher2").innerHTML = "atbash";
+    document.getElementById("text").innerHTML = caesar(atbash(org_text));
 } else {
-    atbash(caesar(org_text));
-    document.getElementById("cipher1").innerHTML = "Atbash";
-    document.getElementById("cipher2").innerHTML = "Caesar";
+    document.getElementById("cipher1").innerHTML = "atbash";
+    document.getElementById("cipher2").innerHTML = "caesar";
+    document.getElementById("text").innerHTML = atbash(caesar(org_text));
 }
