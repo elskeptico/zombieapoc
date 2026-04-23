@@ -41,10 +41,10 @@ function atbash(text) {
 
 if (cipher === 'caesar') {
     document.getElementById("cipher1").innerHTML = "atbash";
-    document.getElementById("cipher2").innerHTML = "caesar";
+    document.getElementById("cipher2").innerHTML = "caesar (shift of three)";
     document.getElementById("text").innerHTML = caesar(atbash(org_text));
 } else {
-    document.getElementById("cipher1").innerHTML = "caesar";
+    document.getElementById("cipher1").innerHTML = "caesar (shift of three)";
     document.getElementById("cipher2").innerHTML = "atbash";
     document.getElementById("text").innerHTML = atbash(caesar(org_text));
 }
