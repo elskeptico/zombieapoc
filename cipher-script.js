@@ -1,6 +1,4 @@
-const ciphers = [
-    'caesar', 'atbash'
-];
+const ciphers = ['caesar', 'atbash'];
 
 const alphabet = [
   'A','B','C','D','E','F',
