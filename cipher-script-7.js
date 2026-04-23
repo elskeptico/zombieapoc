@@ -8,7 +8,7 @@ const alphabet = [
   'Y','Z'
 ];
 
-let org_text = 'THISWORLDISAWHEELANDWEAREALLPEGS';
+let org_text = 'BUTWITHEACHTURNOFTHEWHEELITGETSALITTLEMOREDISTANT';
 const shift = 3;
 
 const cipher = ciphers[Math.floor(Math.random() * ciphers.length)];
