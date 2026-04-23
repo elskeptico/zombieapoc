@@ -13,10 +13,10 @@ const alphabet = [
 let org_text = 'THEWORLDISAWHEELANDWEAREALLPEGS';
 const shift = 3;
 
-const cipher = Math.random(ciphers);
+const cipher = ciphers[Math.floor(Math.random() * ciphers.length)];
 
 function caesar(text) {
-    let NewText = '';
+    let newText = '';
     for (let i = 0; i < text.length; i++) {
         let char = text[i];
         if (alphabet.includes(char.toUpperCase())) { 
@@ -25,28 +25,28 @@ function caesar(text) {
             newText += alphabet[newPosition]
         }   
     }
-    return NewText;
+    return newText;
 }
 
 function atbash(text) {
     let alphabet2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
-    let NewText = '';
+    let newText = '';
     for (i = 0; i < text.length; i++) {
         let coded_letter = text.charAt(i);
         let letter_index = alphabet2.indexOf(coded_letter);
         let decoded_letter = tebahpla.charAt(letter_index);
         newText += decoded_letter;
     }
-    return NewText;
+    return newText;
 }
 
-if (cipher = 'caesar') {
-    document.getElementById("cipher1").innerHTML = "caesar";
-    document.getElementById("cipher2").innerHTML = "atbash";
-    document.getElementById("text").innerHTML = caesar(atbash(org_text));
-} else {
+if (cipher === 'caesar') {
     document.getElementById("cipher1").innerHTML = "atbash";
     document.getElementById("cipher2").innerHTML = "caesar";
+    document.getElementById("text").innerHTML = caesar(atbash(org_text));
+} else {
+    document.getElementById("cipher1").innerHTML = "caesar";
+    document.getElementById("cipher2").innerHTML = "atbash";
     document.getElementById("text").innerHTML = atbash(caesar(org_text));
 }
