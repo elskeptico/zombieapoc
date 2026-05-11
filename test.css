@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    position: fixed;
+    /* width: 100%; */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1000;
+    width: auto;
+}
+
+nav select {
+    width: 100%;
+    padding: 5px;
+}
+
+option {
+    text-align: center;
+}
+
+
+ 
+
+    .timer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hello {
+        padding: 20px;
+        text-align: center;
+    }
+
+ 
+    
+    .wall {
+        display: flex;
+
+    }
+    
+    section {
+        /* border: 10px inset #000; */
+    }
+
+
+    .one {
+        width: 25%;
+    }
+
+    .two {
+        width: 50%;
+    }
+
+    .behind {
+        font-family: monospace;
+        text-align: center;
+        color: red;
+    }
+
+    .behind::selection {
+        color: #000;
+     
+    }
+
+    .behind span {
+        background-color: red;
+        color: #000;
+    }
+
+    .spiral {
+        height: 100vw;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .spiral marquee {
+        position: absolute;
+        top: 50%;
+    }   
+
+    .two marquee {
+        background-color:  #000;
+        color: red;
+    }
+    
+    
