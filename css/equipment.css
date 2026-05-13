@@ -1,9 +1,9 @@
 img {
     width: auto;
-    height: 200;
+    height: 200px;
 }
 
 img.recipe {
-    width: 250;
+    width: 250px;
     height: auto;
 }
