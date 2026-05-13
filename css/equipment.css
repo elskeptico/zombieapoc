@@ -1,3 +1,9 @@
 img {
-    width: 500px;
+    width: auto;
+    height: 500;
+}
+
+img.recipe {
+    width: 250;
+    height: auto;
 }
