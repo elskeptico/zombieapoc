@@ -71,3 +71,9 @@ a, a:visited {
     text-decoration: none;
     color: #708454;
 }
+
+a:hover {
+    color:#7E0B16;
+    transform: translateY(-0.5px);
+    transition: 0.5s;
+}
