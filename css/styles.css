@@ -58,8 +58,8 @@ header h3 {
 }
 
 img.row {
-    max-width: 500px;
-    height: auto;
+    width: auto;
+    max-height: 100%;
 }
 
 p {
