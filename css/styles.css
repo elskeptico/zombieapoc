@@ -53,10 +53,6 @@ header h3 {
     gap: 20px; 
 }
 
-p.paragraph {
-    font-size: 1rem;
-}
-
 .obfuscated {
     font-family: 'Falls Cipher', sans-serif;
 }
@@ -67,7 +63,6 @@ img.row {
 }
 
 p {
-    font-size: 2.5rem;
     color: #1E1818;
 }
 
