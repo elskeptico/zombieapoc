@@ -48,6 +48,9 @@ header h3 {
 
 .row {
     background-color: darkgray;
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
 }
 
 .paragraph {
@@ -59,5 +62,7 @@ header h3 {
 }
 
 img.row {
-    
+    max-width: 500px;
+    height: auto;
 }
+
