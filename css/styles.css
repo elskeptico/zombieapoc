@@ -74,6 +74,6 @@ a, a:visited {
 
 a:hover {
     color:#7E0B16;
-    transform: translateY(5px);
+    transform: translate(5px);
     transition: all 0.5s;
 }
