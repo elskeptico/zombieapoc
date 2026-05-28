@@ -5,6 +5,13 @@ const secondEl = document.getElementById("second");
 
 const releaseTime = new Date("Jun 5, 2026 00:00:00").getTime();
 
+
+
+const dialog = document.getElementById('playtesters');
+document.getElementById('opentesters').onclick = () => dialog.showModal();
+document.getElementById('close').onclick = () => dialog.close();
+
+
 updateCountdown();
 
 function updateCountdown() {
@@ -26,3 +33,4 @@ function updateCountdown() {
   secondEl.innerText = s;
   setTimeout(updateCountdown, 1000)
 }
+
