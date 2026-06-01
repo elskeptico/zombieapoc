@@ -5,14 +5,6 @@ const secondEl = document.getElementById("second");
 
 const releaseTime = new Date("Jun 5, 2026 12:00:00").getTime();
 
-
-
-const dialog = document.getElementById('playtesters');
-document.getElementById('opentesters').onclick = () => dialog.showModal();
-document.getElementById('close').onclick = () => dialog.close();
-
-
-
 function updateCountdown() {
   const now = new Date().getTime();
   const gap = releaseTime - now;
@@ -26,10 +18,10 @@ function updateCountdown() {
   const h = Math.floor((gap % day) / hour);
   const m = Math.floor((gap % hour) / minute);
   const s = Math.floor((gap % minute) / second);
-  dayEl.innerHTML = d;
-  hourEl.innerHTML = h;
-  minuteEl.innerHTML = m;
-  secondEl.innerHTML = s;
+  dayEl.innerHTML = d.toString;
+  hourEl.innerHTML = h.toString;
+  minuteEl.innerHTML = m.toString;
+  secondEl.innerHTML = s.toString;
   setTimeout(updateCountdown, 1000)
 }
 
